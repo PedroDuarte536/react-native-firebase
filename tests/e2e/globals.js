@@ -119,4 +119,10 @@ Object.defineProperty(global, 'installationsModular', {
   },
 });
 
+Object.defineProperty(global, 'inAppMessagingModular', {
+  get() {
+    return jet.inAppMessagingModular;
+  },
+});
+
 global.isCI = !!process.env.CI;
